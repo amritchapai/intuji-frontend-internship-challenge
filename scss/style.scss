@@ -1,0 +1,168 @@
+$body-section: #fafbff;
+$hero-section1: #62bada;
+$hero-section2: #c9e7f2;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $body-section;
+  color: black;
+
+  .container {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  header {
+    background: linear-gradient(to right, $hero-section2, $hero-section1);
+    padding: 20px 0 0px 0;
+  }
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-weight: 700;
+    font-size: 20px;
+  }
+  .nav-items {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .nav-items a {
+    color: black;
+    font-weight: 500;
+
+    i {
+      margin-left: 3px;
+      font-size: 11px;
+    }
+  }
+
+  .auth-buttons {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+  }
+  .sign-in {
+    color: #333;
+    font-weight: 500;
+  }
+  .start-free {
+    background-color: #4f46ba;
+    color: white;
+    padding: 10px 20px;
+    font-weight: 500;
+  }
+  .hero {
+    background: linear-gradient(to right, $hero-section2, $hero-section1);
+    position: relative;
+    height: 770px;
+    overflow: hidden;
+    .hero-content {
+      display: flex;
+      gap: 30px;
+      .hero-text {
+        display: flex;
+        font-family: "Manrope", sans-serif;
+        flex-direction: column;
+        padding-right: 20px;
+        margin-top: 175px;
+        gap: 10px;
+        h1 {
+          font-size: 60px;
+          font-weight: 800;
+        }
+        p {
+          font-size: 20px;
+          font-weight: 400;
+          line-height: 30px;
+          margin-bottom: 30px;
+          color: #555;
+        }
+        .hero-buttons {
+          display: flex;
+          gap: 80px;
+          margin-top: 15px;
+          margin-bottom: 30px;
+          align-items: center;
+          .get-started {
+            background-color: #3734a9;
+            color: white;
+            padding: 15px 35px;
+            border-radius: 47px;
+            font-weight: 400;
+            font-size: 16px;
+          }
+
+          .see-how {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            .play-icon {
+              display: flex;
+              background-color: #22d497;
+              height: 54px;
+              width: 54px;
+              align-items: center;
+              justify-content: center;
+              border-radius: 50%;
+              font-size: 25px;
+              color: white;
+            }
+            a {
+              font-weight: 400;
+              font-size: 17px;
+              color: #3734a9;
+            }
+          }
+        }
+
+        .hero-features {
+          display: flex;
+          gap: 30px;
+        }
+
+        .hero-feature {
+          display: flex;
+          align-items: center;
+          gap: 8px;
+          font-size: 17px;
+          color: #757095;
+          i {
+            color: #3734a9;
+            font-size: 18px;
+          }
+        }
+      }
+      .hero-image {
+        width: 45%;
+        img {
+          width: 500px;
+        }
+      }
+    }
+    .upper-image {
+      position: absolute;
+      bottom: 50%;
+      right: 0;
+      transform: translateY(-125%);
+    }
+
+    .bottom-right-image {
+      position: absolute;
+      right: 0;
+      transform: translateY(-110%);
+    }
+    .bottom-left-image {
+      position: absolute;
+      bottom: 0;
+      transform: translateY(-50%);
+    }
+  }
+}

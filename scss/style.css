@@ -1,0 +1,158 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fafbff;
+  color: black;
+}
+body .container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+body header {
+  background: linear-gradient(to right, #c9e7f2, #62bada);
+  padding: 20px 0 0px 0;
+}
+body .navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+body .nav-items {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+body .nav-items a {
+  color: black;
+  font-weight: 500;
+}
+body .nav-items a i {
+  margin-left: 3px;
+  font-size: 11px;
+}
+body .auth-buttons {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+body .sign-in {
+  color: #333;
+  font-weight: 500;
+}
+body .start-free {
+  background-color: #4f46ba;
+  color: white;
+  padding: 10px 20px;
+  font-weight: 500;
+}
+body .hero {
+  background: linear-gradient(to right, #c9e7f2, #62bada);
+  position: relative;
+  height: 770px;
+  overflow: hidden;
+}
+body .hero .hero-content {
+  display: flex;
+  gap: 30px;
+}
+body .hero .hero-content .hero-text {
+  display: flex;
+  font-family: "Manrope", sans-serif;
+  flex-direction: column;
+  padding-right: 20px;
+  margin-top: 175px;
+  gap: 10px;
+}
+body .hero .hero-content .hero-text h1 {
+  font-size: 60px;
+  font-weight: 800;
+}
+body .hero .hero-content .hero-text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 30px;
+  margin-bottom: 30px;
+  color: #555;
+}
+body .hero .hero-content .hero-text .hero-buttons {
+  display: flex;
+  gap: 80px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  align-items: center;
+}
+body .hero .hero-content .hero-text .hero-buttons .get-started {
+  background-color: #3734a9;
+  color: white;
+  padding: 15px 35px;
+  border-radius: 47px;
+  font-weight: 400;
+  font-size: 16px;
+}
+body .hero .hero-content .hero-text .hero-buttons .see-how {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+body .hero .hero-content .hero-text .hero-buttons .see-how .play-icon {
+  display: flex;
+  background-color: #22d497;
+  height: 54px;
+  width: 54px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 25px;
+  color: white;
+}
+body .hero .hero-content .hero-text .hero-buttons .see-how a {
+  font-weight: 400;
+  font-size: 17px;
+  color: #3734a9;
+}
+body .hero .hero-content .hero-text .hero-features {
+  display: flex;
+  gap: 30px;
+}
+body .hero .hero-content .hero-text .hero-feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 17px;
+  color: #757095;
+}
+body .hero .hero-content .hero-text .hero-feature i {
+  color: #3734a9;
+  font-size: 18px;
+}
+body .hero .hero-content .hero-image {
+  width: 45%;
+}
+body .hero .hero-content .hero-image img {
+  width: 500px;
+}
+body .hero .upper-image {
+  position: absolute;
+  bottom: 50%;
+  right: 0;
+  transform: translateY(-125%);
+}
+body .hero .bottom-right-image {
+  position: absolute;
+  right: 0;
+  transform: translateY(-110%);
+}
+body .hero .bottom-left-image {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(-50%);
+}/*# sourceMappingURL=style.css.map */
