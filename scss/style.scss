@@ -497,6 +497,7 @@ body {
   }
   .testimonials {
     margin-top: 120px;
+
     .header {
       display: flex;
       align-items: center;
@@ -524,16 +525,20 @@ body {
       width: calc(100vw - (100vw - 1250px) / 2 - 19px);
       display: flex;
       gap: 40px;
-      margin-top: 55px;
+      margin-top: 35px;
+      padding-top: 25px;
       overflow-x: scroll;
-
       scrollbar-width: none;
       -ms-overflow-style: none;
       .testimonial-card {
+        position: relative;
         display: flex;
         width: 700px;
         flex-shrink: 0;
-        border: 1px solid black;
+        border: 1px solid #cfcfcf;
+        border-radius: 10px;
+        padding-top: 22px;
+
         .testimonial-content {
           margin: 40px 0px 0 20px;
           p {
@@ -553,7 +558,75 @@ body {
           width: 240px;
           padding: 25px;
         }
+        .quote-left {
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 44px;
+          width: 44px;
+          border-radius: 50%;
+          background-color: black;
+          color: white;
+          top: 0;
+          left: 20px;
+          top: -22px;
+        }
       }
+    }
+  }
+  .stats {
+    position: relative;
+    background-color: #5e41e0;
+    color: white;
+    margin-top: 90px;
+    height: 200px;
+    .stats-inner {
+      display: flex;
+      align-items: center;
+
+      .stats-text {
+        width: 150px;
+        font-weight: 400;
+        font-size: 19px;
+        line-height: 31px;
+      }
+      .line {
+        height: 200px;
+        width: 2px;
+        background-color: black;
+      }
+      .stats-numbers {
+        display: flex;
+        flex: 1;
+        align-items: center;
+        justify-content: space-around;
+        .stat {
+          .stat-number {
+            font-weight: 800;
+            font-size: 72px;
+            line-height: 72px;
+          }
+          .stat-label {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            i {
+              font-size: 20px;
+              color: #baca16;
+            }
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 31px;
+          }
+        }
+      }
+    }
+    img {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      transform: translateY(-50%);
     }
   }
 }

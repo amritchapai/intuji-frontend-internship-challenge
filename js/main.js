@@ -30,6 +30,11 @@ const trackingMethod = [
   },
 ];
 
+//for testimonial section
+const testimonials = [{
+    
+}]
+
 console.log("hello");
 document.addEventListener("DOMContentLoaded", () => {
   const clientLogoSection = document.getElementById("client-logos");
