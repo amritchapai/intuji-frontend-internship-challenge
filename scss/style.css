@@ -10,7 +10,7 @@ body {
   color: black;
 }
 body .container {
-  max-width: 1300px;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 0 10px;
 }
@@ -235,7 +235,7 @@ body .portfolio-tracking .tracking-methods .tracking-card {
   gap: 15px;
   background-color: white;
   flex: 1;
-  padding: 100px 25px 15px 25px;
+  padding: 85px 25px 15px 25px;
   border: 1px solid #dbe4e9;
   text-align: center;
   border-radius: 15px;
@@ -280,4 +280,127 @@ body .portfolio-tracking .tracking-methods .tracking-card .number {
   left: 15px;
   font-weight: 800;
   font-size: 22px;
+}
+body .track-payments {
+  margin-top: 100px;
+  height: 500px;
+}
+body .track-payments .payments {
+  display: flex;
+}
+body .track-payments .payments .image-container {
+  position: relative;
+}
+body .track-payments .payments .image-container .image-top {
+  position: absolute;
+  top: -20px;
+  right: 25%;
+  transform: translateX(45%);
+}
+body .track-payments .payments .payments-content {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  gap: 20px;
+}
+body .track-payments .payments .payments-content .why-choose {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #3734a9;
+}
+body .track-payments .payments .payments-content h2 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+}
+body .track-payments .payments .payments-content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #64607d;
+  margin-right: 10px;
+}
+body .track-payments .payments .payments-content .line {
+  width: 100;
+  height: 2px;
+  background-color: #c4c4c4;
+}
+body .track-payments .payments .payments-content ul {
+  list-style: none;
+}
+body .track-payments .payments .payments-content ul li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 30px;
+  color: #64607d;
+}
+body .track-payments .payments .payments-content ul li i {
+  color: #fdbc64;
+}
+body .save-money {
+  height: 700px;
+  overflow: hidden;
+}
+body .save-money .save-money-container {
+  display: flex;
+}
+body .save-money .save-money-container .save-money-content {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 0;
+  gap: 30px;
+  margin-top: 150px;
+}
+body .save-money .save-money-container .save-money-content .why-choose {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 100%;
+  color: #3734a9;
+}
+body .save-money .save-money-container .save-money-content h2 {
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 60px;
+}
+body .save-money .save-money-container .save-money-content p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #64607d;
+  margin-right: 10px;
+}
+body .save-money .save-money-container .save-money-content .testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  border-radius: 15px;
+  background-color: #c4c4c4;
+  padding: 30px 25px;
+  margin-top: 20px;
+  position: relative;
+}
+body .save-money .save-money-container .save-money-content .testimonial p,
+body .save-money .save-money-container .save-money-content .testimonial span {
+  font-weight: 600;
+  color: black;
+  font-size: 15px;
+}
+body .save-money .save-money-container .save-money-content .testimonial .quote-left {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  top: 0;
+  transform: translateY(-50%);
 }/*# sourceMappingURL=style.css.map */
