@@ -604,4 +604,165 @@ body .stats img {
   top: 50%;
   right: 0;
   transform: translateY(-50%);
+}
+body .blogs {
+  margin-top: 90px;
+}
+body .blogs .recent {
+  font-weight: 800;
+  font-size: 71px;
+  line-height: 66px;
+}
+body .blogs .blog-main {
+  margin-top: 80px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  height: 285px;
+}
+body .blogs .blog-main img {
+  height: 285px;
+}
+body .blogs .blog-main .main-text {
+  padding: 20px 15px 0 15px;
+}
+body .blogs .blog-main .main-text span {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 36px;
+}
+body .blogs .blog-main .main-text p {
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 36px;
+  margin-bottom: 80px;
+}
+body .blogs .blog-main .main-text a {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 16px;
+  color: #1b1c31;
+}
+body .blogs .blog-main .main-text a i {
+  font-size: 11.5px;
+}
+body .blogs .blogs-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 35px;
+  margin-top: 30px;
+}
+body .blogs .blogs-group .blog-card {
+  background-color: white;
+}
+body .blogs .blogs-group .blog-card .blog-text {
+  padding: 30px 15px 40px 15px;
+}
+body .blogs .blogs-group .blog-card .blog-text .blog-card-practises {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 36px;
+}
+body .blogs .blogs-group .blog-card .blog-text p {
+  font-weight: 700;
+  font-size: 29px;
+  line-height: 36px;
+}
+body .blogs .blogs-group .blog-card span {
+  margin-top: 40px;
+}
+body .blogs .blogs-group .blog-card img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 200px;
+}
+body .faq {
+  margin-top: 90px;
+}
+body .faq h2 {
+  font-weight: 800;
+  font-size: 71px;
+  line-height: 76px;
+}
+body .faq .question-section {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+body .faq .question-section .questions {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  gap: 19px;
+}
+body .faq .question-section .questions .faq-card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+}
+body .faq .question-section .questions .faq-card .faq-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px 15px 15px;
+}
+body .faq .question-section .questions .faq-card .faq-title .title {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+}
+body .faq .question-section .questions .faq-card .faq-title .plus {
+  font-size: 30px;
+}
+body .faq .question-section .questions .faq-card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 31px;
+  margin: 0px 30px 15px 15px;
+}
+body .faq .question-section .more-questions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+  width: 400px;
+  height: 512px;
+  background-color: white;
+  margin-top: 20px;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid #cfcfcf;
+  border-radius: 10px;
+}
+body .faq .question-section .more-questions i {
+  font-size: 67px;
+  margin-bottom: 20px;
+}
+body .faq .question-section .more-questions span {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+body .faq .question-section .more-questions p {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 31px;
+  padding: 0 20px 65px 20px;
+  text-align: center;
+}
+body .faq .question-section .more-questions button {
+  width: 100%;
+  height: 40px;
+  background-color: #ff7f5c;
+  border: none;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
