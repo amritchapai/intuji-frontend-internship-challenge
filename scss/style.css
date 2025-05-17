@@ -6,6 +6,7 @@
 
 body {
   background-color: #fafbff;
+  font-family: "Manrope", sans-serif;
   color: black;
 }
 body .container {
@@ -66,7 +67,6 @@ body .hero .hero-content {
 }
 body .hero .hero-content .hero-text {
   display: flex;
-  font-family: "Manrope", sans-serif;
   flex-direction: column;
   padding-right: 20px;
   margin-top: 175px;
@@ -171,4 +171,113 @@ body .clients .client-logos {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+body .portfolio-tracking {
+  margin-top: 80px;
+}
+body .portfolio-tracking .tracking-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+body .portfolio-tracking .tracking-header .text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+body .portfolio-tracking .tracking-header .text .automated {
+  font-weight: 800;
+  font-size: 56px;
+}
+body .portfolio-tracking .tracking-header .text .sub-title {
+  font-weight: 400;
+  font-size: 16px;
+}
+body .portfolio-tracking .tracking-header .testimonial {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 405px;
+  border-radius: 15px;
+  background-color: #c4c4c4;
+  padding: 30px 25px;
+  font-weight: 600;
+  font-size: 15px;
+  position: relative;
+}
+body .portfolio-tracking .tracking-header .testimonial .quote-left {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  background-color: black;
+  color: white;
+  top: 0;
+  transform: translateY(-50%);
+}
+body .portfolio-tracking .tracking-methods {
+  display: flex;
+  align-items: center;
+  gap: 80px;
+  margin-top: 70px;
+}
+body .portfolio-tracking .tracking-methods .tracking-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 360px;
+  gap: 15px;
+  background-color: white;
+  flex: 1;
+  padding: 100px 25px 15px 25px;
+  border: 1px solid #dbe4e9;
+  text-align: center;
+  border-radius: 15px;
+}
+body .portfolio-tracking .tracking-methods .tracking-card .upper-box {
+  background-color: black;
+  width: 39px;
+  height: 10px;
+  margin-bottom: 5px;
+}
+body .portfolio-tracking .tracking-methods .tracking-card .lower-box {
+  width: 50px;
+  height: 30px;
+  background-color: pink;
+}
+body .portfolio-tracking .tracking-methods .tracking-card .blue {
+  background-color: #3734a9;
+}
+body .portfolio-tracking .tracking-methods .tracking-card .orange {
+  background-color: #ff7f5c;
+}
+body .portfolio-tracking .tracking-methods .tracking-card .yellow {
+  background-color: #fdbc64;
+}
+body .portfolio-tracking .tracking-methods .tracking-card h2 {
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 34px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+body .portfolio-tracking .tracking-methods .tracking-card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #757095;
+}
+body .portfolio-tracking .tracking-methods .tracking-card .number {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  font-weight: 800;
+  font-size: 22px;
 }/*# sourceMappingURL=style.css.map */
