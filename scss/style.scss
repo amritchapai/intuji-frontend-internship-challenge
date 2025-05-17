@@ -790,4 +790,68 @@ body {
       }
     }
   }
+  .discover-section {
+    margin-top: 100px;
+    .discover-container {
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+      background-color: #3734a9;
+      height: 438px;
+      align-items: center;
+      justify-content: center;
+      border-radius: 20px;
+      position: relative;
+      span {
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 61px;
+        color: white;
+        text-align: center;
+        z-index: 20;
+      }
+      button {
+        width: 223px;
+        height: 67px;
+        background-color: #ff7f5c;
+        border-radius: 5px;
+        border: none;
+        color: white;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 30px;
+        z-index: 20;
+      }
+      .jickjack-left {
+        position: absolute;
+        bottom: 0;
+        left: 8%;
+        bottom: 7%;
+        // transform: rotate(180);
+      }
+      .cones-left {
+        position: absolute;
+        top: 50%;
+        // transform: translateY(-50%);
+        left: 20%;
+      }
+      .dots {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-100%);
+        left: 14%;
+      }
+      .jickjack-right {
+        position: absolute;
+        top: 0;
+        transform: rotate(90deg);
+        right: 15%;
+      }
+      .cones-right {
+        position: absolute;
+        bottom: 10%;
+        right:5%;
+      }
+    }
+  }
 }
