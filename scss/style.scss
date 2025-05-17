@@ -518,6 +518,7 @@ body {
       }
       img {
         margin-right: 30px;
+        object-fit: cover;
       }
     }
 
@@ -537,7 +538,6 @@ body {
         flex-shrink: 0;
         border: 1px solid #cfcfcf;
         border-radius: 10px;
-        padding-top: 22px;
 
         .testimonial-content {
           margin: 40px 0px 0 20px;
@@ -557,6 +557,7 @@ body {
           height: 350px;
           width: 240px;
           padding: 25px;
+          object-fit: cover;
         }
         .quote-left {
           position: absolute;
@@ -673,11 +674,14 @@ body {
       }
     }
     .blogs-group {
-      display: flex;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 35px;
       margin-top: 30px;
       .blog-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
         background-color: white;
         .blog-text {
           padding: 30px 15px 40px 15px;
@@ -705,7 +709,17 @@ body {
     }
   }
   .faq {
-    margin-top: 90px;
+    margin-top: 100px;
+    position: relative;
+    .faq-left {
+      position: absolute;
+      top: 15%;
+    }
+    .faq-right {
+      position: absolute;
+      right: 0;
+      transform: translateY(25%);
+    }
     h2 {
       font-weight: 800;
       font-size: 71px;
@@ -832,7 +846,7 @@ body {
       .cones-left {
         position: absolute;
         top: 50%;
-        // transform: translateY(-50%);
+        transform: translateY(30%);
         left: 20%;
       }
       .dots {
@@ -850,8 +864,139 @@ body {
       .cones-right {
         position: absolute;
         bottom: 10%;
-        right:5%;
+        right: 5%;
       }
+    }
+  }
+  footer {
+    margin-top: 90px;
+    .footer-container {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      .ar-shakir {
+        span {
+          color: #1b1c31;
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 28px;
+        }
+        p {
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 28px;
+          margin-top: 20px;
+          margin-bottom: 25px;
+          color: #757095;
+        }
+        .social-media {
+          display: flex;
+          gap: 15px;
+          i {
+            font-size: 20px;
+            color: #3734a9;
+          }
+        }
+      }
+      .company {
+        span {
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 24px;
+          color: #181433;
+        }
+        ul {
+          list-style: none;
+          margin-top: 20px;
+          li {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #181433;
+            margin-bottom: 15px;
+          }
+        }
+      }
+
+      .resources {
+        span {
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 24px;
+          color: #181433;
+        }
+        ul {
+          list-style: none;
+          margin-top: 20px;
+          li {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 24px;
+            color: #181433;
+            margin-bottom: 12px;
+          }
+        }
+      }
+      .join-newsletter {
+        grid-column: span 2;
+        span {
+          font-weight: 700;
+          font-size: 21px;
+          line-height: 24px;
+          color: #181433;
+        }
+        .subscribe-part {
+          display: flex;
+          flex: 1;
+          margin-top: 20px;
+          height: 52px;
+        }
+        input {
+          flex: 1;
+          outline: none;
+          border: none;
+          background-color: #eeeeff;
+          padding-left: 10px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 26px;
+          color: #181433;
+        }
+        input:focus {
+          border-color: #8585ff;
+        }
+        button {
+          height: 149;
+          width: 149px;
+          border: none;
+          background-color: #3734a9;
+          color: white;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 26px;
+        }
+        p {
+          margin-top: 15px;
+          font-weight: 500;
+          font-size: 16px;
+          line-height: 26px;
+          color: #757095;
+          margin-right: 150px;
+        }
+      }
+    }
+    .footer-line {
+      margin: 40px 0;
+      height: 2px;
+      width: 100%;
+      background-color: #e5e5ea;
+    }
+    .copyright {
+      padding: 40px 0;
+      text-align: center;
+      font-weight: 400px;
+      font-size: 16px;
+      line-height: 26px;
+      color: #181433;
     }
   }
 }

@@ -501,6 +501,8 @@ body .testimonials .header .header-left p {
 }
 body .testimonials .header img {
   margin-right: 30px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body .testimonials .testimonials-container {
   width: calc(100vw - (100vw - 1250px) / 2 - 19px);
@@ -519,7 +521,6 @@ body .testimonials .testimonials-container .testimonial-card {
   flex-shrink: 0;
   border: 1px solid #cfcfcf;
   border-radius: 10px;
-  padding-top: 22px;
 }
 body .testimonials .testimonials-container .testimonial-card .testimonial-content {
   margin: 40px 0px 0 20px;
@@ -539,6 +540,8 @@ body .testimonials .testimonials-container .testimonial-card img {
   height: 350px;
   width: 240px;
   padding: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 body .testimonials .testimonials-container .testimonial-card .quote-left {
   position: absolute;
@@ -650,12 +653,15 @@ body .blogs .blog-main .main-text a i {
   font-size: 11.5px;
 }
 body .blogs .blogs-group {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 35px;
   margin-top: 30px;
 }
 body .blogs .blogs-group .blog-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: white;
 }
 body .blogs .blogs-group .blog-card .blog-text {
@@ -681,7 +687,17 @@ body .blogs .blogs-group .blog-card img {
   height: 200px;
 }
 body .faq {
-  margin-top: 90px;
+  margin-top: 100px;
+  position: relative;
+}
+body .faq .faq-left {
+  position: absolute;
+  top: 15%;
+}
+body .faq .faq-right {
+  position: absolute;
+  right: 0;
+  transform: translateY(25%);
 }
 body .faq h2 {
   font-weight: 800;
@@ -809,6 +825,7 @@ body .discover-section .discover-container .jickjack-left {
 body .discover-section .discover-container .cones-left {
   position: absolute;
   top: 50%;
+  transform: translateY(30%);
   left: 20%;
 }
 body .discover-section .discover-container .dots {
@@ -827,4 +844,128 @@ body .discover-section .discover-container .cones-right {
   position: absolute;
   bottom: 10%;
   right: 5%;
+}
+body footer {
+  margin-top: 90px;
+}
+body footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+body footer .footer-container .ar-shakir span {
+  color: #1b1c31;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 28px;
+}
+body footer .footer-container .ar-shakir p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  color: #757095;
+}
+body footer .footer-container .ar-shakir .social-media {
+  display: flex;
+  gap: 15px;
+}
+body footer .footer-container .ar-shakir .social-media i {
+  font-size: 20px;
+  color: #3734a9;
+}
+body footer .footer-container .company span {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  color: #181433;
+}
+body footer .footer-container .company ul {
+  list-style: none;
+  margin-top: 20px;
+}
+body footer .footer-container .company ul li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #181433;
+  margin-bottom: 15px;
+}
+body footer .footer-container .resources span {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  color: #181433;
+}
+body footer .footer-container .resources ul {
+  list-style: none;
+  margin-top: 20px;
+}
+body footer .footer-container .resources ul li {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #181433;
+  margin-bottom: 12px;
+}
+body footer .footer-container .join-newsletter {
+  grid-column: span 2;
+}
+body footer .footer-container .join-newsletter span {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 24px;
+  color: #181433;
+}
+body footer .footer-container .join-newsletter .subscribe-part {
+  display: flex;
+  flex: 1;
+  margin-top: 20px;
+  height: 52px;
+}
+body footer .footer-container .join-newsletter input {
+  flex: 1;
+  outline: none;
+  border: none;
+  background-color: #eeeeff;
+  padding-left: 10px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #181433;
+}
+body footer .footer-container .join-newsletter input:focus {
+  border-color: #8585ff;
+}
+body footer .footer-container .join-newsletter button {
+  height: 149;
+  width: 149px;
+  border: none;
+  background-color: #3734a9;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+}
+body footer .footer-container .join-newsletter p {
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  color: #757095;
+  margin-right: 150px;
+}
+body footer .footer-line {
+  margin: 40px 0;
+  height: 2px;
+  width: 100%;
+  background-color: #e5e5ea;
+}
+body footer .copyright {
+  padding: 40px 0;
+  text-align: center;
+  font-weight: 400px;
+  font-size: 16px;
+  line-height: 26px;
+  color: #181433;
 }/*# sourceMappingURL=style.css.map */
