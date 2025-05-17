@@ -343,7 +343,7 @@ body .track-payments .payments .payments-content ul li i {
   color: #fdbc64;
 }
 body .save-money {
-  height: 700px;
+  height: 685px;
   overflow: hidden;
 }
 body .save-money .save-money-container {
@@ -403,4 +403,79 @@ body .save-money .save-money-container .save-money-content .testimonial .quote-l
   color: white;
   top: 0;
   transform: translateY(-50%);
+}
+body .features {
+  margin-top: 80px;
+  font-weight: 600px;
+  background-color: #c9e7f2;
+}
+body .features .features-container {
+  padding: 100px 0 80px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+body .features .features-container h2 {
+  font-weight: 800;
+  font-size: 71px;
+  line-height: 66px;
+}
+body .features .features-container p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 29px;
+  color: black;
+}
+body .features .features-container .features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 30px;
+}
+body .features .features-container .features-grid .feature-card {
+  grid-row: span 2;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 50px 30px 35px 30px;
+  border: 1px solid #abc8d2;
+  border-radius: 10px;
+}
+body .features .features-container .features-grid .feature-card .upper-box {
+  width: 43.12px;
+  height: 10px;
+  background-color: black;
+  margin-bottom: 2px;
+}
+body .features .features-container .features-grid .feature-card .lower-box {
+  width: 55.28px;
+  height: 30px;
+  background-color: #ff7f5c;
+}
+body .features .features-container .features-grid .feature-card .purple {
+  background-color: #3734a9;
+}
+body .features .features-container .features-grid .feature-card h3 {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 35px;
+}
+body .features .features-container .features-grid .feature-card p {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 26px;
+}
+body .features .features-container .features-grid .feature-small-card {
+  background-color: white;
+  padding: 30px 30px 15px 30px;
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #abc8d2;
+  border-radius: 8px;
+}
+body .features .features-container .features-grid .feature-small-card h3 {
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 35px;
 }/*# sourceMappingURL=style.css.map */

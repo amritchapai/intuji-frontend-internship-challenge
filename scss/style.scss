@@ -2,7 +2,7 @@ $body-section: #fafbff;
 $hero-section1: #62bada;
 $hero-section2: #c9e7f2;
 $client-section: #f5f6f8;
-
+$features-section: #c9e7f2;
 * {
   margin: 0;
   padding: 0;
@@ -358,7 +358,7 @@ body {
     }
   }
   .save-money {
-    height: 700px;
+    height: 685px;
     overflow: hidden;
     .save-money-container {
       display: flex;
@@ -414,6 +414,82 @@ body {
             color: white;
             top: 0;
             transform: translateY(-50%);
+          }
+        }
+      }
+    }
+  }
+  .features {
+    margin-top: 80px;
+    font-weight: 600px;
+    background-color: $features-section;
+    .features-container {
+      padding: 100px 0 80px 0;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      h2 {
+        font-weight: 800;
+        font-size: 71px;
+        line-height: 66px;
+      }
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 29px;
+        color: black;
+      }
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: 30px;
+
+        .feature-card {
+          grid-row: span 2;
+          background-color: white;
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          padding: 50px 30px 35px 30px;
+          border: 1px solid #abc8d2;
+          border-radius: 10px;
+          .upper-box {
+            width: 43.12px;
+            height: 10px;
+            background-color: black;
+            margin-bottom: 2px;
+          }
+          .lower-box {
+            width: 55.28px;
+            height: 30px;
+            background-color: #ff7f5c;
+          }
+          .purple {
+            background-color: #3734a9;
+          }
+          h3 {
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 35px;
+          }
+          p {
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 26px;
+          }
+        }
+        .feature-small-card {
+          background-color: white;
+          padding: 30px 30px 15px 30px;
+          display: flex;
+          align-items: flex-start;
+          border: 1px solid #abc8d2;
+          border-radius: 8px;
+          h3 {
+            font-weight: 800;
+            font-size: 22px;
+            line-height: 35px;
           }
         }
       }
